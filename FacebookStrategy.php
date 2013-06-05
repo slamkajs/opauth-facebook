@@ -70,7 +70,7 @@ class FacebookStrategy extends OpauthStrategy{
 					'uid' => $me->id,
 					'info' => array(
 						'name' => $me->name,
-						'image' => 'https://graph.facebook.com/'.$me->id.'/picture?type=square'
+						'image' => 'http://graph.facebook.com/'.$me->id.'/picture?type=large'
 					),
 					'credentials' => array(
 						'token' => $results['access_token'],
